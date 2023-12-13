@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F0F4F3!important;
+}
+.roundedParent{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: -4rem;
+    top: -4rem;
+    background-color:#97e2d8!important;
+    opacity: 0.6;
+}
+.roundedChild{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: -7rem;
+    top: 3rem;
+    background-color:#97e2d8!important;
+    opacity: 0.6;
+}
+@media(max-width:600px){
+    .roundedParent{
+        position: absolute;
+        width: 164px;
+        height: 150px;
+        border-radius: 50%;
+        left: -7rem;
+        top: 3rem;
+        background-color: #97e2d8!important;
+        opacity: 0.6;
+        
+    }
+    .roundedChild{
+        position: absolute;
+        width: 180px;
+        height: 151px;
+        border-radius: 50%;
+        left: -7rem;
+        top: -3rem;
+        background-color: #97e2d8!important;
+        opacity: 0.6;
+    }
+    
+}
+.signUpImage{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+}
+.signInImage{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+}
+#signUpBtn{
+    border:none!important;
+    width: 100%;
+    background-color: #50C2C9!Important;
+    font-weight: bolder;
+    font-size: large;
+    font-family: cursive;
+    border-radius: 1rem;
+}
+#signUpBtn:hover{
+    border: 1px solid purple!important;
+    border-radius: 0!important;
+}
+#loginLinkPara{
+    text-align: center;
+}
+    
+#welcomeBox{
+    margin-top: 6rem!important;
+}
+#signInWelcomeBox{
+    margin-top: 4rem!important;
+}
+.welcomeHead{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.showAndHidePass,
+#passwordChecked{
+    cursor: pointer;
+}
+
+
+
+#registerBtnParent{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:730px){
+    #registerBtnParent{
+        width: 100%;
+    }
+    
+}
+
+/* TODO STYLE  */
+.welcome{
+    background-color: #50C2C9!important;
+    /* border: 1px solid red; */
+    height: 12rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome h1{
+   font-size: 1.5rem;
+   color: white;
+}
+#welcomeBtns{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 90%;
+}
+#welcomeBtns #logoutBtn,
+#welcomeBtns #completeTaskBtn,
+#welcomeBtns #lefttaskBtn{
+    background-color:white!important;
+    color: #50C2C9!important;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#todoTitle.taskDone{
+    text-decoration: black 0.5px line-through;
+}
+.para.taskDone{
+    text-decoration: black 0.5px line-through;
+}
+/* .welcome #logoutBtn{
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    background-color:white!important;
+    color: #50C2C9!important;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.welcome #completeTaskBtn,
+.welcome #lefttaskBtn{
+    margin-left: auto;
+    margin-right: 1rem;
+    background-color:white!important;
+    color: #50C2C9!important;
+    font-size: 1.2rem;
+    font-weight: 600;
+} */
+   
+.welcome img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    text-align: center;
+}
+#heading{
+    font-size: 1.5rem;
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 600;
+}
+#greetings{
+    /* display: inline-block;
+    width: 97%; */
+    text-align: center;
+    /* border: 1px solid red; */
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color:  brown;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 25%;
+    margin-left: auto;
+}
+#time{
+    width: 100%;
+    display: inline-block;
+    /* border: 3px dotted red; */
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 2rem;
+    color:  brown;
+}
+
+
+   
+@media(max-width:500px){
+    #greetings{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #time{
+        font-size: 1.5rem;
+    }
+    #heading{
+        font-size: 1rem;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: -1rem;
+        text-align: center;
+        font-family: cursive;
+        font-weight: 600;
+    }
+    .dailyItemText{
+        padding: 0.5rem;
+    }
+    #clrAll{
+        background-color: #50C2C9!important; 
+        border: none!important;
+        position: fixed;
+        right: 0;
+        width: 50%;
+        background-color: #50C2C9!important;
+        border: none!important;
+        bottom: 15%;
+        right: 50%;
+        left: 25%;
+    }
+
+       
+}
+
+
+/* TASK LIST STYLE  */
+.containerWrapper{
+    /* width: 30rem; */
+    height: 20rem;
+    overflow-y: auto;
+    /* border: 1px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+@media(max-width:700px){
+    .containerWrapper{
+        width: 75%;
+    }
+    .tasks{
+        width: 100%!important;
+    }
+    .dailyItemText{
+        
+        width: 100%!important;
+        
+    }
+   
+        
+}
+.dailyItemText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid green;
+    border-radius: 1rem;
+    width: 61%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tasks{
+    /* border: 1px solid green; */
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    background-color: #50C2C9!important;
+    color: white;
+    font-size: 1.1rem;
+}
+.containerWrapper::-webkit-scrollbar {
+    width:0.5rem!important;
+    
+}
+.containerWrapper::-webkit-scrollbar-thumb {
+    background-color:gray;
+    
+}
+.taskAndIcon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option i.fai,
+.option i.fai{
+    cursor: pointer;
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 1rem
+}
+@media(min-width:700px){
+    .option{
+        /* border: 1px solid red; */
+        width: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+@media(max-width:700px){
+    .taskAndIcon{
+        flex-direction: column;
+    }
+    .option{
+        /* border: 1px solid red; */
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .date{
+        /* border: 1px solid red; */
+        width: 102%!important;
+        margin: 0rem!important;
+        font-size: 0.8rem;
+    }
+    .para{
+         /* border: 1px solid red; */
+        width: 102%!important;
+        margin: 0.5rem 0rem!important;
+        font-size: 1rem;
+    }
+    .tasks{
+        
+        min-height: 20rem;
+        /* width: 20rem!important; */
+        /* display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        background-color: #50C2C9!important;
+        color: white;
+        font-size: 1.1rem; */
+    }
+}
+
+#clrAll{
+    background-color: #50C2C9!important; 
+    border: none!important;
+    position: fixed;
+    right: 0;
+    width: 50%;
+    background-color: #50C2C9!important;
+    border: none!important;
+    bottom: 22%;
+    right: 50%;
+    left: 25%;
+}
+    
+#clrAll:hover{
+    border: 1px solid purple!important;
+    
+}
+#crt{
+    font-size: 1rem;
+    opacity: 0.9;
+    padding-bottom: 1rem;
+}
+.option i.fai{
+ cursor: pointer;
+}
+#todoSubmitBtn,
+#modelBtn{
+    /* border: 1px solid red; */
+    width: 45%!important;
+    margin-right: auto!important;
+}
+#loginLink,
+#signUpLink{
+    color: #2d9297!important;
+    cursor: pointer;
+}
+#todoTitle,
+.para{
+    word-wrap: break-word;
+    font-size: 1rem;
+}

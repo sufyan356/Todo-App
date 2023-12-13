@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet"href = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+
+    <div class="roundedParent"></div>
+    <div class="roundedChild"></div>
+
+    <div class="container" id="containerParent">
+
+        
+        <div class="row" id="rowId">
+            <div class="col-sm-12 mt-0" id="signInWelcomeBox">
+                <h1 class="text-center mx-auto welcomeHead">Welcome Back</h1>
+                <div class="signInImage mt-auto">
+                    <img src="signInImage.png" alt="signUpImage" class="img-fluid text-center" id="signImage">
+                </div>
+            </div>
+
+            <!-- <div class="col-sm-12 mt-4" id="welcomeBox">
+               <h1 class="text-center mx-auto welcomeHead">Welcome Back</h1>
+               <p class="text-center mx-auto welcomeHead">Let's help to meet Up Your Task</p>
+            </div> -->
+
+            <div class="col-sm-12" id="formContainerParent">
+                <div class="formContainer">
+                    <form onsubmit="signIn(event)">
+                       
+                        <!-- FOR EMAIL  -->
+                        <div class="mb-3">
+                            <label for="L_email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email"  aria-describedby="emailHelp"  autocomplete="off" />
+                            <div id="emailHelp" class="form-text">
+                              We'll never share your email with anyone else.
+                            </div>
+                        </div>
+
+                        <!-- FOR PASSWORD  -->
+                        <div class="mb-3">
+                            <label for="L_password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" autocomplete="off"/>
+                        </div>
+
+                        <!-- FOR SHOW PASSWORD  -->
+                        <div class="mb-3 form-check" id="showAndHidePassContainer">
+                            <input  type="checkbox"  class="form-check-input"  id="passwordChecked" onclick="showPasswordFunction()"/>
+                            <label class="form-check-label showAndHidePass"for="passwordChecked" >SHOW PASSWORD</label>
+                        </div>
+
+                        <!-- SIGN IN CONTAINER -->
+                        <div class="signInContainer">
+                            <!-- <a href="#" class="link-light btn btn-primary" id="signInBtn" onclick="signInFunction()"> Login Account</a> -->
+                            <button type="submit" class="btn btn-primary" id="signUpBtn" >
+                                Login Account
+                            </button>
+                        </div>
+                        
+
+                        <!-- SIGN UP LINK -->
+                        <p class="mt-4 text-secondary" id="loginLinkPara">
+                            Register Account? <span id="signUpLink" onclick="signUpLink(event)">Sign Up</span>
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+  </head>
+  <body>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous">
+    </script>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>
